@@ -1,0 +1,14 @@
+Package: PsychHelper
+Type: Package
+Title: Helps with repetitive data cleaning and visualization tasks
+Version: 0.1.0
+Author: Konstantyn Sharpinskyi
+Maintainer: Konstantyn Sharpinskyi <ksharpin@uwaterloo.ca>
+Description: Shows, item - level histograms, descriptives and reliability for any given scale.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2, ggpubr, gridExtra, plyr, roxygen2, devtools
+Suggests:
+    knitr
