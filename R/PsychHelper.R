@@ -18,6 +18,8 @@ describe.me <- function(dataset, cols, rows) {
   library(plyr)
   library(knitr)
 
+  # Strip all variables of attributes in case an spss data file is used, imported with haven package.
+  dataset <- as.data.frame(sapply(dataset, as.numeric))
 
   # Item level histograms
 
