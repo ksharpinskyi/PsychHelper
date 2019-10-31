@@ -25,7 +25,7 @@ describe.me <- function(dataset, cols, rows) {
 
   max.breaks <- max(as.numeric(lapply(names(dataset), function(n) max(dataset[,n], na.rm = T))))
 
-  highest.frequency <- max(as.numeric(sapply(dataset, function(x) table(x))))
+  highest.frequency <- max(as.numeric(unlist(sapply(dataset, function(x) table(x)))))
 
   highest.frequency.rounded <- round_any(highest.frequency, 100, ceiling)
 
